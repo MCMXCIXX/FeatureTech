@@ -1,0 +1,11 @@
+@use "../helpers" as *;
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  border-radius: fluid(12, 10);
+  padding: fluid(40, 24);
+  border: var(--border);
+  row-gap: fluid(20, 4);
+  background-color: var(--color-dark-10);
+}

@@ -1,0 +1,48 @@
+@use "../helpers" as *;
+
+.card {
+  display: grid;
+  grid-template-columns: 37.5% auto;
+  align-items: center;
+  @include tablet {
+    grid-template-columns: 100%;
+  }
+  &__preview {
+    padding-right: fluid(80,0);
+    &-main {
+      display: flex;
+      flex-direction: column;
+      row-gap: fluid(50, 20);
+      padding-block: rem(50);
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(16);
+    }
+    &-title {
+    }
+  }
+  &__body {
+    padding: fluid(80, 30) 0 fluid(80, 16) fluid(80, 16);
+    border-left: var(--border);
+    @include tablet {
+      padding: fluid(80, 30) fluid(80, 16) fluid(80, 16) fluid(80, 16);
+      border-left: none;
+      border-top: var(--border);
+    }
+  }
+  &__grid {
+    display: grid;
+    gap: fluid(30, 10);
+    &--2-cols {
+      grid-template-columns: repeat(2, 1fr);
+      @include mobile {
+        grid-template-columns: 100%;
+      }
+    }
+  }
+  &__cell {
+
+  }
+}

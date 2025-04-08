@@ -1,0 +1,10 @@
+@use "../helpers" as *;
+
+.tag {
+  display: inline-flex;
+  background-color: var(--color-dark-20);
+  border-radius: rem(4);
+  padding: fluid(6, 4) fluid(10, 8);
+  color: var(--color-light);
+  font-weight: 500;
+}

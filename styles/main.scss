@@ -17,10 +17,22 @@
 @use 'blocks/hero';
 @use 'blocks/team';
 @use 'blocks/advantages-card';
+@use 'blocks/card';
+@use 'blocks/list';
+@use 'blocks/section';
+@use 'blocks/tag';
+@use 'blocks/tail';
+@use 'blocks/tabs';
+@use 'blocks/blog-card';
+@use 'blocks/person-card';
+@use 'blocks/blog-actions';
 
 .header {
     display: none;
 }
 .footer {
+    display: none;
+}
+.hero {
     display: none;
 }
